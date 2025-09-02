@@ -6,3 +6,7 @@ uv.lock
 __pycache__
 .cursor
 .ruff_cache
+
+*.lock
+.aider*
+.autoenv*
