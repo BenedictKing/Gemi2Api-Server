@@ -388,7 +388,7 @@ async def create_chat_completion(request: ChatCompletionRequest, api_key: str = 
                     }
                     yield f"data: {json.dumps(data)}\n\n"
                     # 可选：添加短暂延迟以模拟真实的流式输出
-                    # await asyncio.sleep(0.01)
+                    await asyncio.sleep(0.01)
 
                 # 发送结束事件
                 data = {
